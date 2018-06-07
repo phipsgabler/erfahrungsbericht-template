@@ -1,0 +1,150 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{microtype}
+
+\usepackage{amssymb}
+\usepackage{tikz}
+
+\newcommand{\heading}[1]{\bigskip\noindent\textbf{\MakeUppercase{#1}:}\medskip}
+
+% \newcommand{\blank}{\rule{4cm}{0.1pt}}
+\newcommand{\blank}{\hrulefill}
+
+\newcommand{\yesnoboxes}{\hspace{1ex}\(\square\) ja\hspace{5ex}\(\square\) nein}
+\newcommand{\yesboxes}{\hspace{1ex}\(\boxtimes\) ja\hspace{5ex}\(\square\) nein}
+\newcommand{\noboxes}{\hspace{1ex}\(\square\) ja\hspace{5ex}\(\boxtimes\) nein}
+
+
+\usepackage{enumitem}
+\setlist[description]{%
+  font=\normalfont\itshape,
+  topsep = \medskipamount,
+  labelindent = 1em}
+\newlist{checklist}{itemize}{2}
+\setlist[checklist]{label=\(\square\)}
+
+
+\begin{document}
+
+\let\oldindent\parindent
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\bigskipamount}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node [xshift=-5.7cm, yshift=-2cm]  %, minimum width=3cm, minimum height=3cm, draw
+  at (current page.north east)
+  {\includegraphics[width=4cm]{logo}};
+\end{tikzpicture}
+\vspace{-1.5cm}
+
+% Bericht soll anderen Studierenden, die sich für einen Auslandsaufenthalt interessieren, zugänglich
+% gemacht werden und auf der Homepage des Büros für Internationale Beziehungen und Mobilitätsprogramme
+% veröffentlicht mind. 1-2 Seiten Abgabe in ausgedruckter und elektronischer Form
+
+\begin{centering}
+  \large \textbf{ERFAHRUNGSBERICHT}
+  \vspace{\baselineskip}
+  \hrule
+  \vspace{\baselineskip}
+\end{centering}
+
+
+\heading{Persönliche Daten}
+\begin{description}
+% \item[Name des/der Studierenden:] (freiwillige Angabe) \blank
+% \item[Matrikelnummer:] (freiwillige Angabe) \blank
+% \item[E-Mail:] (freiwillige Angabe) \blank
+\item[Gastinstitution und Angabe der Fakultät:] \blank
+\item[Studienrichtung an der TU Graz:]  \blank
+\item[Aufenthalt an der Gastinstitution:]  \blank
+\item[Mobilitätsprogramm (zB. Erasmus+, ISEP, Joint Study):]  \blank
+\end{description}
+
+
+\heading{Allgemeines}
+
+Wie hoch waren die monatlichen Kosten für\ldots?
+
+\begin{description}
+\item[Unterbringung:]  \blank
+\item[Verpflegung:] \blank
+\item[Fahrtkosten:]  \blank
+\item[Kopien, Skripten, etc.:]  \blank
+\item[Sonstiges:]  \blank
+\end{description}
+
+
+\heading{Sprachkurs (\MakeLowercase{falls zutreffend})}
+
+Haben Sie vor beginn des Aufenthalts einen vorbereitenden Sprachkurs absolviert?
+\begin{description}
+\item[In Österreich:] \yesnoboxes
+\item[Im Gastland:] \yesnoboxes
+\end{description}
+Wenn ja:
+\begin{description}
+\item[Wo/bei welcher Einrichtung?] \hrulefill
+\item[Wie zufrieden waren Sie?] \hrulefill
+\item[Kosten des Sprachkurses:] \hrulefill
+\item[Wurde der Sprachkurs an der TU Graz anerkannt?] \yesnoboxes
+\end{description}
+
+
+\heading{Unterkunft}
+
+Wie haben sie Ihre Unterkunft gefunden?
+
+\begin{checklist}
+\item Selbst gesucht
+\item Universität hat Unterkunftssuche übernommen
+\item Freunde
+\item Anderes: \blank
+\end{checklist}
+
+Wie zufrieden waren Sie? \blank 
+
+Tipps für NachfolgerInnen: \blank
+% (z.B. bestimmte Zeitungen, Homepages mit Wohnungsangeboten; wichtige länderspezifische Hinweise;
+% Preis-Leistungsverhältnis, etc.)
+
+
+\heading{Fragen zum Studium}
+
+In welchem Maße waren universitäre Einrichtungen vorhanden bzw. zugänglich?
+\begin{description}
+\item[Computerräume:] \blank
+\item[Labors, Zeichensäle, etc.:] \blank
+\item[Andere Einrichtungen:] \blank
+\end{description}
+
+Hatten Sie Probleme bei der \underline{Voraus}anerkennung der Lehrveranstaltungen an der TU Graz?
+\hspace{\oldindent}\yesnoboxes \\
+Wenn ja, welche? \blank
+
+Wurden nach Ihrer Rückkehr alle Lehrveranstaltungen für das Studium an der TU Graz anerkannt?
+\yesnoboxes \\
+Wenn nein, welche nicht und aus welchem Grund? \blank
+
+Tipps für NachfolgerInnen: \blank
+% z.B. Informationen zu Lehrveranstaltungen, Prüfungen, etc.
+
+Wird sich Ihr Studienfortgang an der TU Graz als Folge Ihres Auslandsaufenthalts verzögern?
+\yesnoboxes
+
+
+\heading{Erfahrungsbericht}
+
+%  (mind. 1 – 2 Seiten)
+% - Gesamteindruck zum Auslandsaufenthalt mit Bezug auf den fachlichen Nutzen und die generellen Erfahrungen vor Ort 
+% - Reisevorbereitungen, Details zur Visumsantragstellung, Versicherungen, Ankunft am Studienort (z.B. Transport Flughafen - Stadtzentrum), Abreise, etc. 
+% - Betreuung an der Einrichtung, z.B. durch die Lehrenden 
+% - Studierendenleben am Studienort (Auto von Vorteil?, Bücherkosten, Arbeiten am Campus möglich?, etc.) 
+% - ev. Angabe einer eigenen Homepage, auf der sich weitere Infos / Erfahrungen zum Aufenthalt befinden 
+% - ev. Fotos      
+
+\end{document}
